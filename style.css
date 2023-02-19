@@ -169,8 +169,6 @@ section#presentation > div.text {
     opacity: .8;
 }
 
-.stats > div > div:hover > p {}
-
 .stats > div > div:hover > svg {
     opacity: .15;
     transform: scale(0.9) rotateZ(7.5deg);

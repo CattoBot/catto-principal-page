@@ -28,7 +28,7 @@ const declareUsers = function(){
     var cont = 0
     users.forEach(user=>{
         cont += 1
-        let structure = `<div class="user"><div class="rank"><h3>${cont}º</h3></div><div class="identify"><img src="${user.pfp}" alt=""><div class="username"><h1>#${user.discriminator}</h1><h3>${user.name}</h3></div></div><div class="stats"><div><h1 class="userxp">${reduceNumber(user.xp)}</h1><h3>XP</h3></div><div><h1 class="userlevel">${user.lvl}</h1><h3>Nivel</h3></div></div></div>`
+        let structure = `<div class="user"><div class="rank"><h3>${cont}º</h3></div><div class="identify"><img src="${user.pfp}" alt=""><div class="username"><h1>${user.name}</h1><h3>#${user.discriminator}</h3></div></div><div class="stats"><div><h1 class="userxp">${reduceNumber(user.xp)}</h1><h3>XP</h3></div><div><h1 class="userlevel">${user.lvl}</h1><h3>Nivel</h3></div></div></div>`
         document.querySelector(".lb-container").innerHTML += structure
     })
 

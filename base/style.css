@@ -118,7 +118,7 @@ nav button#inviteCatto p::before{
     transform: translateY(0px);
 }
 nav button#goToInfo p::before{
-    content: "Información";
+    content: "Dashboard";
     transform: translateY(0px);
 }
 
