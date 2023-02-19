@@ -1,0 +1,168 @@
+@import url('https://fonts.cdnfonts.com/css/whitney-2');
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    background-color: #2e2e2e;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* --- HEADER ---*/
+
+header {
+    background-color: #1f1f1f;
+    border-bottom: solid 4px #9d00ff;
+    height: 60px;
+    z-index: 700;
+    margin: 0px;
+    color: #fff;
+    font-family: whitney, Arial;
+}
+
+header>* {
+    margin: 0px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    margin: 0px 20px;
+}
+
+nav img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s;
+}
+
+header:hover img {
+    border-radius: 25%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    margin: 0px;
+    align-items: center;
+}
+
+header li {
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 15px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/* --- BTN STYLE --- */
+nav button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+nav button {
+    --primary-color: #fff;
+    --hovered-color: #fff;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    gap: 0.5rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: whitney, Arial;
+}
+
+nav button * {
+    transition: all 0.3s;
+}
+
+nav button p {
+    margin: 0;
+    position: relative;
+    font-size: 18px;
+    color: var(--primary-color)
+}
+
+nav button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.2s ease-in-out;
+}
+
+nav button#goToHome p::before{
+    content: "Inicio";
+    transform: translateY(0px);
+}
+nav button#inviteCatto p::before{
+    content: "Invitar";
+    transform: translateY(0px);
+}
+nav button#goToInfo p::before{
+    content: "Información";
+    transform: translateY(0px);
+}
+
+nav button:hover p{
+    transform: translateY(-5px);
+}
+
+nav button p::before {
+    position: absolute;
+    /*box-sizing: border-box;*/
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+nav button:hover::after {
+    width: 100%;
+}
+
+nav button:hover p::before {
+    width: 100%;
+    transform: translateY(-5px);
+}
+
+/* --- CONTENT --- */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* ---  COPY  --- */
+
+.copy {
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    margin: 10px;
+    font-family: whitney, Arial;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
