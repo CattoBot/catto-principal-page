@@ -93,6 +93,7 @@ body, html {
 
 .text a {
     transition: all 0.3s;
+    text-decoration: underline;
 }
 .text a:link {
     color: #fff9

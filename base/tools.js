@@ -104,3 +104,7 @@ const url = {
         return false
     }
 }
+
+function gotoDashboard() {
+    window.location.href.split("")
+}

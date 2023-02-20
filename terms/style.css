@@ -1,0 +1,110 @@
+body, div {
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.columns {
+    position: absolute;
+    bottom: 0px;
+    top: 64px;
+    display: flex;
+    flex-direction: row;
+    font-family: whitney, Arial;
+}
+
+.menu {
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #9d00ff;
+    padding: 20px;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.menu h1 {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.menu hr {
+    border-color: #fff;
+}
+
+.menu > ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-transform: uppercase;
+}
+
+.menu > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu > ul > li > ul {
+    list-style-type: none;
+    padding: 0px 25px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    opacity: .5;
+    transition: all 0.3s;
+}
+
+.menu > ul > li:hover > ul {
+    opacity: 1;
+}
+
+.menu a {
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu a:link {
+    color: #fff
+}
+
+.menu a:visited {
+    color: #fff
+}
+
+.menu a:hover {
+    color: #fff;
+    text-decoration:underline;
+}
+
+.menu a:active {
+    color: #fff
+}
+
+.scroll {
+    background-color: #fff;
+    overflow-y: scroll;
+    max-width: 100%;
+    padding: 20px;
+    color: #000;
+    height: 100%;
+}
+
+.scroll div {
+    margin-bottom: 100px;
+}
+
+.scroll h2, .scroll h3 {
+    text-transform: uppercase;
+}
+
+a p.copy {
+    color: #000;
+}
