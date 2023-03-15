@@ -9,6 +9,7 @@ body {
     background-color: #2e2e2e;
     margin: 0px;
     padding: 0px;
+    transition: all 1s;
 }
 
 /* --- HEADER ---*/
@@ -152,6 +153,64 @@ nav button:hover p::before {
     flex-direction: column;
     gap: 10px;
     padding: 0px;
+}
+
+.mobileError {
+    visibility: hidden;
+    position: fixed;
+}
+
+
+@media only screen and (max-width: 1090px) {
+    * {
+        overflow: hidden;
+    }
+
+    .content {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .mobileError {
+        visibility: visible;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .mobileError div {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobileError p {
+        color: #fff;
+        font-family: whitney;
+        font-size: 22px;
+        margin: 0px;
+    }
+
+    .mobileError p.err {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ed4245
+    }
+
+    .mobileError p.msg {
+        font-size: 16px;
+        opacity: .7;
+        text-align: start;
+    }
 }
 
 /* ---  COPY  --- */
