@@ -152,7 +152,6 @@ nav button:hover p::before {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0px;
 }
 
 .mobileError {
@@ -166,9 +165,8 @@ nav button:hover p::before {
         overflow: hidden;
     }
 
-    .content {
-        visibility: hidden;
-        height: 0;
+    nav h1 {
+        font-size: 20px;
     }
 
     .mobileError {
